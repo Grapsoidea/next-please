@@ -20,7 +20,7 @@ public class Branches {
         double fi2 = toRadians(lat);
         double la2 = toRadians(lon);
 
-        return (long)(2 * 6371 * asin(sqrt(pow((sin(fi2 - fi1)/2), 2) + cos(fi2) * cos(fi1) * pow(sin((la2 - la1)/2), 2))));
+        return (long)(2 * 6371000 * asin(sqrt(pow((sin(fi2 - fi1)/2), 2) + cos(fi2) * cos(fi1) * pow(sin((la2 - la1)/2), 2))));
     }
 
     public static Branches minDistance(Branches branches1, Branches branches2, double lat, double lon) {
