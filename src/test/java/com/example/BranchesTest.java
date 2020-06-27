@@ -14,6 +14,6 @@ class BranchesTest {
 
         long distance = branches.calcDistance(59.9398, 30.3146);
 
-        assertEquals(634000, distance);
+        assertEquals(634340, distance);
     }
 }
